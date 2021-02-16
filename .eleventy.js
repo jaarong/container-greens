@@ -2,6 +2,7 @@ const fs = require('fs')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+const pluginCloudinaryImage = require( "eleventy-plugin-cloudinary" )
 const markdownIt = require('markdown-it')
 const markdownItEmoji = require('markdown-it-emoji')
 
@@ -21,7 +22,10 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss)
 	eleventyConfig.addPlugin(pluginNavigation)
 	eleventyConfig.addPlugin(syntaxHighlight)
+	eleventyConfig.addPlugin( pluginCloudinaryImage )
 
+	/**Cloudinary account */
+	eleventyConfig.cloudinaryCloudName = 'dibrkdu2g'
 	/**
 	 * Filters
 	 * @link https://www.11ty.io/docs/filters/

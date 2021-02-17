@@ -8,6 +8,7 @@ module.exports = {
 		'./src/_data/colors.js',
 		'./src/_data/structure.js',
 	],
+  darkMode: false, // or 'media' or 'class'
 	experimental: {
 		applyComplexClasses: true,
 	},

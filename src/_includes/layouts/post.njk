@@ -4,22 +4,6 @@ layout: base
 
 <article class="{{ structure.g_pageWidth }}">
 
-  <h1 class="{{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1>
-  <div class="text-sm {{ colors.authorCustom.date or colors.authorDefault.date}}">
-    <time datetime="{{ date | dateToFormat("yyyy-MM-dd") }}">
-      {{ date | dateToFormat("dd LLL yyyy") }}
-    </time>
-    {# Global disable author display in /src/_data/structure.js #}
-    {% if structure.g_showAuthors %}
-      {# Only display the Author Block if there is a value for "author" in Post Frontmatter #}
-      {% if author %}
-        {% set postAuthor = authors | getAuthor(author) %}
-        by <a class="hover:underline" href="/authors/{{ author }}/">{{ postAuthor.name }}</a>
-      {% endif %}
-    {% endif %}
-
-  </div>
-
   {{ layoutContent | safe }}
 
   {% if structure.g_showTagPills or structure.g_showSocialShareIcons %}
@@ -41,6 +25,21 @@ layout: base
 
     </div>
   {% endif %}
+
+  <div class="text-sm">
+    <time datetime="{{ date | dateToFormat("yyyy-MM-dd") }}">
+      {{ date | dateToFormat("dd LLL yyyy") }}
+    </time>
+    {# Global disable author display in /src/_data/structure.js #}
+    {% if structure.g_showAuthors %}
+      {# Only display the Author Block if there is a value for "author" in Post Frontmatter #}
+      {% if author %}
+        {% set postAuthor = authors | getAuthor(author) %}
+        by <a class="hover:underline" href="/authors/{{ author }}/">{{ postAuthor.name }}</a>
+      {% endif %}
+    {% endif %}
+
+  </div>
 
   {# ===== Previous and Next =====  #}
   <div class="border-t mt-4 pt-4 {{ colors.borderCustom.color or colors.borderDefault.color }} md:flex-row md:flex md:justify-between">

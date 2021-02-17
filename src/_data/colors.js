@@ -10,7 +10,7 @@ module.exports = {
 	 *
 	 * ===== Global Site Text Color =====
 	 */
-	siteTextDefault: 'text-gray-900',
+	siteTextDefault: 'text-white',
 	siteTextCustom: '',
 
 	/**
@@ -36,8 +36,8 @@ module.exports = {
 	 *    and wil ensure no errors in "text", "bg", and "border" values.
 	 */
 	navDefault: {
-		barBg: 'bg-white',
-		text: 'text-teal-500',
+		barBg: 'bg-primary',
+		text: 'text-white',
 		textActive: 'text-teal-600',
 		textHover: 'text-teal-600',
 		textActiveBg: 'bg-teal-100',

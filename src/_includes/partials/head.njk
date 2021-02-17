@@ -3,7 +3,7 @@
 {# set image paths here so user/editor doesn't have to deal with full paths #}
 {%- set ogImage -%}
 {% if seo.image %}
-  /assets/images/{{ seo.image }}
+  https://res.cloudinary.com/dibrkdu2g/image/upload/f_auto,w_320{{ seo.image }}
 {% else %}
   {{ meta.siteImage }}
 {% endif %}

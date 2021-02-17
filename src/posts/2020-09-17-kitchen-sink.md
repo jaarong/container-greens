@@ -1,20 +1,22 @@
 ---
-template: post
 title: Kitchen Sink
-featuredImage:
-  src: https://res.cloudinary.com/dibrkdu2g/image/upload/f_auto/v1601581419/20200417_124946_k1n53q.jpg
-  alt: Flowers
-  title: Flowers
-  id: v1601581419/20200417_124946_k1n53q.jpg
-slug: 2020/kitchen-sink
-draft: false
-date: 2020-09-01T15:25:47.694Z
-description: A look at many markdown elements for testing purposes.
-category: testing
+date: 2021-02-17T15:25:47.694Z
+excerpt: A look at many markdown elements for testing purposes.
+author: aaron-green
+draft: 
+seo:
+  title:
+  description:
+  image: /v1601581419/20200417_124946_k1n53q.jpg
+images: # relative to /src/assets/images/
+  feature: /v1601581419/20200417_124946_k1n53q.jpg
+  alt: This is alt text
+  thumb: /v1601581419/20200417_124946_k1n53q.jpg
+  align: # object-center (default) - other options at https://tailwindcss.com/docs/object-position
+  height: h-64 md:h-1/3 # optional. Default = h-48 md:h-1/3
 tags:
   - testing
 ---
-import Slide from 'react-reveal/Slide';
 
 # Heading 1
 

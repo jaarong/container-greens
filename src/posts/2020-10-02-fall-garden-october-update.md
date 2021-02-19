@@ -1,16 +1,19 @@
 ---
-template: post
 title: Fall Garden October update
-featuredImage:
-  src: https://res.cloudinary.com/dibrkdu2g/image/upload/f_auto/v1601581422/20200930_144253_olel5a.jpg
-  alt: Four containers with young vegetable starts
-  title: Four containers with young vegetable starts
-  id: v1601581422/20200930_144253_olel5a.jpg
-slug: fall-garden-update
-draft: false
 date: 2020-10-02T14:54:15.729Z
-description: The fall garden is not doing as good as I'd hoped.
-category: my-garden
+excerpt: The fall garden is not doing as good as I'd hoped.
+author: aaron-green
+draft: 
+seo:
+  title:
+  description:
+  image: /v1601581422/20200930_144253_olel5a.jpg
+images: # relative to /src/assets/images/
+  feature: /v1601581422/20200930_144253_olel5a.jpg
+  alt: Four containers with young vegetable starts
+  thumb: /v1601581422/20200930_144253_olel5a.jpg
+  align: # object-center (default) - other options at https://tailwindcss.com/docs/object-position
+  height: h-64 md:h-1/3 # optional. Default = h-48 md:h-1/3
 tags:
   - mizuna
   - swiss chard

@@ -36,17 +36,25 @@
       {# If any frontmatter includes images.feature, insert it at the top of the page, 
       below the nav and outside the default wrapper below. #}
       {% if images.feature %}
-        <div class="container sm:w-full md:w-3/5 m-auto text-center bg-black">
+        <div class="container sm:w-full md:w-3/5 m-auto text-center bg-gray-900">
           <img src=https://res.cloudinary.com/dibrkdu2g/image/upload/f_auto,w_1280{{ images.feature }} title={{ images.alt }} alt={{ images.alt }} />
           <h1 class="text-3xl lg:text-5xl my-2 text-white">{{ title }}</h1>
         </div>
       {% endif %}
 
+      {% if page.url != "/" %}
       <div class="flex-grow max-w-full">
-        <main class="block py-12" id="content">
+        <main class="block py-8" id="content">
           {{ content | safe }}
         </main>
       </div>
+      {% else %}
+      <div class="flex-grow max-w-full">
+        <main class="block py-8">
+          {{ content | safe }}
+        </main>
+      </div>
+      {% endif %}
 
       {% include "partials/footer.njk" %}
     </div>

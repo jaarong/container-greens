@@ -1,6 +1,6 @@
 {% set navPages = collections.pages | eleventyNavigation %}
 <nav x-data="{ open: false }" class="bg-pine border-b shadow relative">
-  <div class="px-8 md:px-16 lg:px-32">
+  <div class="px-8 md:px-16 lg:px-32 py-4">
     <div class="flex justify-between h-16">
         <div class="flex items-center">
           {# small logo hidden on md and above #}
@@ -9,7 +9,7 @@
           </a>
           {# large logo hidden on small, block on md #}
           <div class="flex justify-center p-2">
-            <div class="logo text-5xl pr-3 mt-2"><a href="/"><i class="fas fa-seedling"></i></a></div>
+            <div class="logo text-5xl pr-3 mt-2 text-dark"><a href="/"><i class="fas fa-seedling"></i></a></div>
             <div class="p-1">
               <a class="text-2xl" to="/">Container.Garden</a>
               <p class="block text-lg">My adventures in container gardening</p>

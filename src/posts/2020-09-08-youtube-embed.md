@@ -7,12 +7,7 @@ draft:
 seo:
   title:
   description:
-  image: 2020/09/youtube-embed.jpg
-images: # relative to /src/assets/images/
-  feature:
-  thumb: 2020/09/youtube-embed.jpg
-  align: object-left # object-center (default) - other options at https://tailwindcss.com/docs/object-position
-  height: h-64 md:h-1/3 # optional. Default = h-48 md:h-1/3
+  image: 
 tags:
   - youtube
   - video

@@ -1,0 +1,34 @@
+---
+# This is a full listing of available Frontmatter options, available for any content (.md) file.
+title: Container.Garden - My adventures in container gardening
+layout: home
+excerpt: # used for page excerpts and META (will be overwritten if SEO used below)
+author: shane-robinson # only displayed on Post lists and detail views. Defaults to _data/meta.authorURL
+eleventyNavigation: # Required if want to display in Main Nav Bar
+  key: main # "main" is required
+  title: Home # as it will appear in the nav
+  order: 1 # order to display in the nav (index = 1)
+seo: # SEO values are used for OG and will overwrite 'title' and 'excerpt' above
+  title:
+  description:
+  image: # used for OG:image and Twitter:image. Overrides default set in _data/meta.siteImage
+pagination:
+  data: collections.post 
+  size: 12
+  reverse: true
+  alias: posts
+---
+
+    {% set postslist = posts | reverse %}
+    {# 
+      Allows a user to easily change the Tag List Style.
+      Please see instructions in /src/_data/structure.js >>> ===== Post List Style Options =====
+    #}
+    {% set postlist = ['components/', structure.postListStyle, '.njk'] %}
+    {% include postlist | join %}
+
+    {# ===== Paginate based on "size" frontmatter value above =====  #}
+    {# Don't even include the pagination component if there are fewer posts than needed to paginate  #}
+    {% if collections.post.length > pagination.size %}
+      {% include "components/pagination.njk" %}
+    {% endif %}

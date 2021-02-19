@@ -1,0 +1,12 @@
+---
+layout: base
+tags: pages
+---
+
+  {% if seo.description %}
+    <div class="p-2">
+      {{ seo.description }}
+    </div>
+  {% endif %}
+
+  {{ content | safe }}

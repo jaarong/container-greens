@@ -1,16 +1,19 @@
 ---
-template: post
 title: My favorite podcasts
-featuredImage:
-  src: https://res.cloudinary.com/dibrkdu2g/image/upload/f_auto/v1604948764/podcast-list_PM_cwgx1r.jpg
+date: 2021-02-17T15:25:47.694Z
+excerpt: A list of my favorite gardening podcasts
+author: aaron-green
+draft: 
+seo:
+  title:
+  description:
+  image: /v1604948764/podcast-list_PM_cwgx1r.jpg
+images: # relative to /src/assets/images/
+  feature: /v1604948764/podcast-list_PM_cwgx1r.jpg
   alt: Various thumbnail icons of gardening podcasts
-  title: Various thumbnail icons of gardening podcasts
-  id: v1604948764/podcast-list_PM_cwgx1r.jpg
-slug: my-favorite-podcasts
-draft: false
-date: 2020-10-09T19:09:11.094Z
-description: A list of my favorite gardening podcasts
-category: learn
+  thumb: /v1604948764/podcast-list_PM_cwgx1r.jpg
+  align: # object-center (default) - other options at https://tailwindcss.com/docs/object-position
+  height: h-64 md:h-1/3 # optional. Default = h-48 md:h-1/3
 tags:
   - podcasts
 ---

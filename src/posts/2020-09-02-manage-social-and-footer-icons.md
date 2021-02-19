@@ -7,11 +7,7 @@ draft:
 seo:
   title:
   description:
-  image: 2020/09/social.jpg
-images: # relative to /src/assets/images/
-  feature:
-  thumb: 2020/09/social.jpg
-  slide:
+  image: 
 tags:
   - social
   - svg

@@ -7,12 +7,7 @@ draft:
 seo:
   title:
   description:
-  image: home/6.jpg
-images: # relative to /src/assets/images/
-  feature:
-  thumb: home/6.jpg
-  align: # object-center (default) - other options at https://tailwindcss.com/docs/object-position
-  height: # optional. Default = h-48 md:h-1/3
+  image: 
 hero: graphic # options: carousel, graphic, video, split (text & image)
 heroSettings:
   height:

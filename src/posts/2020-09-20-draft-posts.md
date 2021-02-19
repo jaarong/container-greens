@@ -7,12 +7,7 @@ draft: false
 seo:
   title:
   description:
-  image: 2020/09/draft.png
-images: # relative to /src/assets/images/
-  feature:
-  thumb: 2020/09/draft.png
-  align: # object-center (default) - other options at https://tailwindcss.com/docs/object-position
-  height: # optional. Default = h-48 md:h-1/3
+  image: 
 tags:
   - structure
   - customization

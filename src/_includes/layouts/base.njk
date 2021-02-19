@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="/assets/tailwind.css"/>
     <link rel="alternate" type="application/atom+xml" title="RSS Feed for {{ meta.siteName }}" href="/feed.xml"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42fa81ebfc.js" crossorigin="anonymous"></script> 
     {# Only include the Flickity js if this page uses a hero.carousel  #}
     {% if hero == "carousel" or product.carousel -%}
       <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -37,7 +38,7 @@
       {% if images.feature %}
         <div class="container sm:w-full md:w-3/5 m-auto text-center bg-black">
           <img src=https://res.cloudinary.com/dibrkdu2g/image/upload/f_auto,w_1280{{ images.feature }} title={{ images.alt }} alt={{ images.alt }} />
-          <h1 class="text-3xl lg:text-5xl text-white">{{ title }}</h1>
+          <h1 class="text-3xl lg:text-5xl my-2 text-white">{{ title }}</h1>
         </div>
       {% endif %}
 

@@ -13,13 +13,15 @@
             <div class="flex flex-col justify-between flex-1 p-6 bg-pine">
               <div class="flex-1">
                 <a href="{{ post.url | url }}" class="block">
-                  <h3 class="my-2 text-xl font-semibold leading-7 text-white">
+                  <h3 class="mt-2 mb-1 text-xl font-semibold leading-7 text-white">
                     {{ post.data.title }}
                   </h3>
-
+                  <time class="text-sm text-gray-300 mb-2 font-light uppercase" datetime="{{ post.data.date | dateToFormat("LL-dd-yyyy") }}">
+                    {{ post.data.date | dateToFormat("MMMM yyyy") }}
+                  </time>
                   {# Display Post Excerpt if set 'true' in /src/_data/structure.js:g_showExcerpt  #}
                   {% if structure.g_showExcerpt %}
-                    <div class="text-white">
+                    <div class="text-white my-4">
                       {{ post.data.excerpt }}
                     </div>
                   {% endif %}
@@ -27,13 +29,12 @@
                 </a>
               </div>
 
-              {# Found the TagPills are too much for this layout. Uncomment them below if you want to display them. #}
-              {# <div class="flex-1 bg-gray-100">
+              <div class="flex-1">
                 {% if structure.g_showTagPills %}
                   {% set tags = post.data.tags %}
                   {% include "components/tagpills.njk" %}
                 {% endif %}
-              </div> #}
+              </div> 
 
               {# Used conditionals here to keep control at the template levels rather than at the component level.  #}
               {# Display the Author block if structure.g_showAuthors is true (default) #}

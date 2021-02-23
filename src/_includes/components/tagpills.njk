@@ -3,7 +3,7 @@
     {# Knock out the first iteration of the loop to drop the default "post" tag generated in `posts/posts.json`. #}
     {# If there's a better/easier way of doing this, please LMK.  #}
     {% if not loop.first %}
-      <div class="inline-block p-2">
+      <div class="inline-block py-2">
         <a alt="tagged {{ tag }}" aria-label="tagged {{ tag }}" href="/tags/{{ tag | slug }}/" class="inline-block pr-3 text-sm font-semibold hover:text-primary hover:border-pine">#{{ tag }}</a>
       </div>
     {% endif %}

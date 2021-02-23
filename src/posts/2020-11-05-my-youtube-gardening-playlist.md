@@ -17,6 +17,8 @@ images: # relative to /src/assets/images/
 tags:
   - learn
   - youtube
+category:
+  - learn
 ---
 
 Here are my top videos that helped me learn about container gardening.

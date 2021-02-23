@@ -118,6 +118,8 @@ h5 {
 }
 #content table {
   @apply mb-6;
+  @apply text-black;
+  @apply bg-white;
 }
 
 /* Wrap any inline highlights `that are really long`, but don't modify

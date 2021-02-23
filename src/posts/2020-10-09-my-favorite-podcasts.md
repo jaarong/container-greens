@@ -16,6 +16,8 @@ images: # relative to /src/assets/images/
   height: h-64 md:h-1/3 # optional. Default = h-48 md:h-1/3
 tags:
   - podcasts
+category:
+  - learn
 ---
 Gardening podcasts for the purposes of growing vegetables are a bit hard to find since a lot of podcasts focus more on the larger garden including trees, flowers, shrubs, and animals. The list I've created are the podcasts that I listen to that at least for the majority of the episodes focus on vegetable gardening. I've created a list of my favorites over at podchaser.com. Check them out: 
 

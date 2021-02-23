@@ -19,6 +19,8 @@ tags:
   - swiss chard
   - arugula
   - zucchini
+category:
+  - my-garden
 ---
 As you can see in the photo, everything is not going as planned with my fall garden. The temperatures have really changed in the past month. With the first two weeks after planting being very hot with temperatures in the low 90's. The last two weeks have been mild, even relatively cold for September in the 70's and 80's. 
 

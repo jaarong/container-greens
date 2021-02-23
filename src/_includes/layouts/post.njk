@@ -28,7 +28,7 @@ layout: base
 
   <div class="text-sm">
     <time datetime="{{ date | dateToFormat("yyyy-MM-dd") }}">
-      {{ date | dateToFormat("dd LLL yyyy") }}
+      Posted {{ date | dateToFormat("LLL dd yyyy") }}
     </time>
     {# Global disable author display in /src/_data/structure.js #}
     {% if structure.g_showAuthors %}

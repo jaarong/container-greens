@@ -28,7 +28,7 @@
     "dev:postcss": "postcss src/assets/css/tailwind.css -o dist/assets/tailwind.css --watch",
     "dev": "npm-run-all clean --parallel dev:* --print-label",
     "build:webpack": "webpack  --mode production",
-    "build:eleventy": "ELEVENTY_ENV=production eleventy",
+    "build:eleventy": "eleventy",
     "build:postcss": "NODE_ENV=production postcss src/assets/css/tailwind.css -o dist/assets/tailwind.css",
     "build": "run-s clean build:* --print-label"
   },

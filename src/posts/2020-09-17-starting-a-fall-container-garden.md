@@ -1,16 +1,19 @@
 ---
-template: post
 title: Starting a fall container garden
-featuredImage:
-  src: https://res.cloudinary.com/dibrkdu2g/image/upload/f_auto/v1601581420/20200831_171107_fq6sm7.jpg
-  alt: Seedling starts in four containers
-  title: Seedling starts in containers
-  id: v1601581420/20200831_171107_fq6sm7.jpg
-slug: 2020/starting-a-fall-container-garden
-draft: false
 date: 2020-09-02T15:20:24.881Z
-description: I've begun to start some seeds for my fall container garden.
-category: my-garden
+excerpt: I've begun to start some seeds for my fall container garden.
+author: aaron-green
+draft: 
+seo:
+  title:
+  description:
+  image: /v1601581420/20200831_171107_fq6sm7.jpg
+images: # relative to /src/assets/images/
+  feature: /v1601581420/20200831_171107_fq6sm7.jpg
+  alt: Seedling starts in containers
+  thumb: /v1601581420/20200831_171107_fq6sm7.jpg
+  align: # object-center (default) - other options at https://tailwindcss.com/docs/object-position
+  height: h-64 md:h-1/3 # optional. Default = h-48 md:h-1/3
 tags:
   - swiss chard
   - arugula

@@ -5,7 +5,7 @@ require('dotenv').config()
  *  for use in footer and other non-content file locations
  */
 module.exports = {
-  env: process.env.NODE_ENV,
+  env: process.env.ELEVENTY_ENV,
   timestamp: new Date(),
   timezone: process.env.TIMEZONE || 'UTC',
   url: process.env.URL || 'http://localhost:8080',

@@ -5,6 +5,7 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const pluginCloudinaryImage = require( "eleventy-plugin-cloudinary" )
 const markdownIt = require('markdown-it')
 const markdownItEmoji = require('markdown-it-emoji')
+const eleventyRemark = require('@fec/eleventy-plugin-remark')
 
 // const collections = require('./utils/collections.js')
 const filters = require('./utils/filters.js')
@@ -27,7 +28,11 @@ module.exports = function (eleventyConfig) {
 	/**Cloudinary account */
 	eleventyConfig.cloudinaryCloudName = 'dibrkdu2g'
 	/**
-	 * Filters
+
+	/** Remark plugin */
+	eleventyConfig.addPlugin(eleventyRemark);
+
+	/** * Filters
 	 * @link https://www.11ty.io/docs/filters/
 	 */
 	Object.keys(filters).forEach((filterName) => {

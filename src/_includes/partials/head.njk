@@ -31,3 +31,31 @@
 <link rel="icon" type="image/png" href="{{ '/assets/images/favicon/favicon-16x16.png' | url }}" sizes="16x16">
 {#- RSS Feed #}
 <link type="application/atom+xml" rel="alternate" href="{{ build.url }}/feed.xml" title="{{ meta.siteName }} XML Feed">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ absolutePageUrl }}"
+  },
+  "headline": "{{ title }}",
+  "image": [
+    "https://res.cloudinary.com/dibrkdu2g/image/upload/f_auto,w_1280{{ images.feature }}"
+  ],
+  "datePublished": "{{ date }}",
+  "dateModified": "{{ date }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ author }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Container.Garden",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://container-garden.netlify.com/assets/images/leaf_logo.jpg"
+    }
+  }
+}
+</script>

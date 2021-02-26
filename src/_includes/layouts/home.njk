@@ -10,3 +10,8 @@ tags: pages
   {% endif %}
 
   {{ content | safe }}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script>
+      gsap.fromTo(".card", {duration: 2, yPercent: 100, autoAlpha: 0, stagger: 0.5}, {duration: 2, yPercent: 0, ease: "power2.out", autoAlpha: 1, stagger: 0.5});
+    </script>

@@ -7,9 +7,9 @@ draft:
 seo:
   title:
   description:
-  image: https://res.cloudinary.com/dibrkdu2g/image/upload/f_auto/v1604591481/youtube-subscriptions_ew0qmg.jpg
+  image: /v1604591481/youtube-subscriptions_ew0qmg.jpg
 images: # relative to /src/assets/images/
-  feature: https://res.cloudinary.com/dibrkdu2g/image/upload/f_auto/v1604591481/youtube-subscriptions_ew0qmg.jpg
+  feature: /v1604591481/youtube-subscriptions_ew0qmg.jpg
   alt: This is alt text
   thumb: /v1604591481/youtube-subscriptions_ew0qmg.jpg
   align: # object-center (default) - other options at https://tailwindcss.com/docs/object-position

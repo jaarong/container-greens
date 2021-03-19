@@ -42,7 +42,6 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
     "@babel/core": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
-    "@fec/eleventy-plugin-remark": "^2.2.1",
     "@tailwindcss/custom-forms": "^0.2.1",
     "alpinejs": "^2.8.0",
     "autoprefixer": "^10.2.5",

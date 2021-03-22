@@ -1,14 +1,18 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
-	purge: [
-		'./src/**/*.html',
-		'./src/**/*.njk',
-		'./src/**/*.md',
-		'./src/_data/colors.js',
-		'./src/_data/structure.js',
-	],
-  darkMode: false, // or 'media' or 'class'
+	purge: {
+		mode: "all",
+		content: [
+			'./src/**/*.html',
+			'./src/**/*.njk',
+			'./src/**/*.md',
+			'./src/_data/colors.js',
+			'./src/_data/structure.js',
+		],
+		options: {
+		  whitelist: [],
+		},
+	},
+  	darkMode: false, // or 'media' or 'class'
 	experimental: {
 		applyComplexClasses: true,
 	},
@@ -70,5 +74,5 @@ module.exports = {
 		},
 	},
 	variants: {},
-	plugins: [require('@tailwindcss/custom-forms')],
+	plugins: [],
 }

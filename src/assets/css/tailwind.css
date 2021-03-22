@@ -1,4 +1,6 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 h1,
 h2,
@@ -130,7 +132,3 @@ h5 {
   white-space: pre-line;
 }
 /* purgecss end ignore */
-
-@tailwind components;
-
-@tailwind utilities;

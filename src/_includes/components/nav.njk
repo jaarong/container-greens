@@ -4,22 +4,22 @@
     <div class="flex justify-between h-16">
         <div class="flex items-center">
           {# small logo hidden on md and above #}
-          <a aria-label="Mobile Logo" href="/" class="block md:hidden logo text-5xl pr-3 mt-1" alt="Mobile Logo">
+          <a aria-label="Mobile Logo" href="/" class="block sm:hidden logo text-4xl pr-3 mt-1" alt="Mobile Logo">
             <i class="fas fa-seedling"></i>
           </a>
           {# large logo hidden on small, block on md #}
           <div class="flex justify-center p-2">
-            <div class="logo text-5xl pr-3 mt-2 text-dark"><a href="/"><i class="fas fa-seedling"></i></a></div>
+            <div class="logo text-5xl pr-3 mt-2 hidden sm:block text-dark"><a href="/"><i class="fas fa-seedling"></i></a></div>
             <div class="p-1">
-              <a class="text-2xl" href="/">Container.Garden</a>
-              <p class="block text-lg">My adventures in container gardening</p>
+              <a class="text-xl sm:text-2xl" href="/">Container.Garden</a>
+              <p class="hidden sm:block">My adventures in container gardening</p>
             </div>
           </div>
         </div>
-        <div class="hidden sm:ml-6 sm:flex sm:items-center bg-leaf-green">
+        <div class="hidden sm:ml-6 sm:flex sm:items-center">
           {# 11ty Nav Plugin loop  #}
           {% for entry in navPages %}
-            <a {% if page.url != entry.url %}href="{{ entry.url | url }}"{% endif %} alt="Link to {{ entry.title }}" class=" px-3 py-2 font-medium rounded-md items-center {% if page.url == entry.url %} bg-dark-green text-white {% else %} text-white hover:text-dark {% endif %} focus:outline-none focus:text-dark transition duration-150 ease-in-out">
+            <a {% if page.url != entry.url %}href="{{ entry.url | url }}"{% endif %} alt="Link to {{ entry.title }}" class="px-3 py-2 font-medium rounded-md items-center {% if page.url == entry.url %} bg-olivine text-dark font-bold {% else %} text-white hover:text-dark {% endif %} focus:outline-none focus:text-dark transition duration-150 ease-in-out">
               {{ entry.title }}
             </a>
           {% endfor %}
@@ -48,7 +48,7 @@
     <div class="pt-2 pb-3">
       {# 11ty Nav Plugin loop  #}
       {% for entry in navPages %}
-        <a {% if page.url != entry.url %}href="{{ entry.url | url }}"{% endif %} alt="Link to {{ entry.title }}" class="block pl-4 pr-4 py-2 {% if page.url == entry.url %} bg-dark-green text-white {% else %} text-white hover:text-dark {% endif %} text-base font-medium text-white focus:outline-none focus:text-dark focus:bg-dark-green transition duration-150 ease-in-out">
+        <a {% if page.url != entry.url %}href="{{ entry.url | url }}"{% endif %} alt="Link to {{ entry.title }}" class="block pl-4 pr-4 py-2 {% if page.url == entry.url %} bg-olivine text-white {% else %} text-white hover:text-dark {% endif %} text-base font-medium text-white focus:outline-none focus:text-dark focus:bg-olivine transition duration-150 ease-in-out">
           {{ entry.title }}
         </a>
       {% endfor %}

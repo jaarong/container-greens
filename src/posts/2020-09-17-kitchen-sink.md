@@ -3,7 +3,7 @@ title: Kitchen Sink
 date: 2021-02-17T15:25:47.694Z
 excerpt: A look at many markdown elements for testing purposes.
 author: aaron-green
-draft: 
+draft: true
 seo:
   title:
   description:

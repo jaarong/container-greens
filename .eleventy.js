@@ -79,8 +79,11 @@ module.exports = function (eleventyConfig) {
 	 * If "false" or NULL it will be published in PRODUCTION.
 	 * Every Post will ALWAYS be published in DEVELOPMENT so you can preview locally.
 	 */
-	eleventyConfig.addCollection('post', (collection) => {
-		return [...collection.getFilteredByGlob('./src/posts/*.md')]
+	 eleventyConfig.addCollection('post', (collection) => {
+		if (process.env.ELEVENTY_ENV !== 'production')
+			return [...collection.getFilteredByGlob('./src/posts/*.md')]
+		else
+			return [...collection.getFilteredByGlob('./src/posts/*.md')].filter((post) => !post.data.draft)
 	})
 
 	// TAGLIST used from the official eleventy-base-blog  https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
